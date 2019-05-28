@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Dojo</title>
+    <link rel="stylesheet" href="dojo.css"></link>
+  </head>
+  <body>
+    <h1>CSS Dojo</h1>
+    <p>
+      In each kata below, you will be instructed to change the styles applied to the kata such that
+      the text of the kata matches its style. You may only make changes that conform to the rules
+      set out in each individual kata. You should also leave the kata ID selectors alone so that
+      your changes only affect the kata you're working on.
+    </p>
+
+    <section>
+      <header><h2>Kata 1</h2></header>
+      <section id="kata1">
+        <p>
+          Remove the <code>!important</code> declaration to make this sentence italic. Then reorder
+          the rule sets to change it back.
+        </p>
+      </section>
+    </section>
+
+    <section>
+      <header><h2>Kata 2</h2></header>
+      <section id="kata2">
+        <p>
+          Modify a selector to make it so that <span id="kata2-a">this <code>&lt;span&gt;</code> has
+          a dashed</span> border but <span id="kata2-b">this <code>&lt;span&gt;</code> has a solid
+          border</span>.
+        </p>
+      </section>
+    </section>
+
+    <section>
+      <header><h2>Kata 3</h2></header>
+      <section id="kata3">
+        <p>
+          Modify a selector to make it so that <strong class="a">this
+          <code>&lt;strong&gt;</code> is rendered in small caps</strong> while
+          <strong class="b">this <code>&lt;strong&gt;</code> is not</strong>.
+        </p>
+      </section>
+    </section>
+
+    <section>
+      <header><h2>Kata 4</h2></header>
+      <section id="kata4">
+        <p>
+          Modify the selector so that only checked checkboxes have the <code>grab</code> cursor when
+          you hover over them.
+        </p>
+        <input type="checkbox" />
+        <input type="checkbox" checked />
+        <input type="checkbox" />
+        <input type="checkbox" checked />
+        <input type="checkbox" />
+      </section>
+    </section>
+
+    <section>
+      <header><h2>Kata 5</h2></header>
+      <section id="kata5">
+        <p>
+          Modify the selector so that the TV Tropes icons seen in this paragraph are only applied to links to
+          <a href="https://tvtropes.org">tvtropes.org</a>.
+          If you're having trouble,
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors">this MDN page</a>.
+          may help. When you have some free time and would like to amuse yourself, have fun reading about
+          <a href="https://tvtropes.org/pmwiki/pmwiki.php/Main/EvilOverlordList">The Evil Overlord List</a>,
+          <a href="http://catb.org/jargon/html/">The Jargon File</a>, or
+          <a href="https://tvtropes.org/pmwiki/pmwiki.php/Main/GrowingTheBeard">Growing the Beard</a>.
+          Maybe you need to
+          <a href="https://downforeveryoneorjustme.com/tvtropes.org">check to see if TV Tropes is down</a>?
+          But beware, because
+          <a href="https://tvtropes.org/pmwiki/pmwiki.php/Main/TVTropesWillRuinYourLife">TV Tropes will ruin your life</a>.
+        </p>
+      </section>
+    </section>
+
+    <section>
+      <header><h2>Kata 6</h2></header>
+      <section id="kata6">
+        <p>
+          <span>Each sentence in this kata is bold and black with a white glow.</span>
+          <span>However, I want each sentence to alternate the white and red glows, starting with
+          red.</span> <span>Create a new rule set to do this.</span>
+        </p>
+      </section>
+    </section>
+
+    <section>
+      <header><h2>Kata 7</h2></header>
+      <section id="kata7">
+        <p>
+          If you are a fan of the Monkey Island games, you know that Guybrush Threepwood is afraid
+          of <span class="porcelain">porcelain</span>. So to avoid traumatizing him, we will hide
+          every instance of the word &ldquo;<span class="porcelain">porcelain</span>&rdquo; in this
+          paragraph. There are two style rule sets for this kata in the style sheet, and you may
+          only modify the selector for the first one, and you cannot reorder them. Make the
+          <span class="porcelain">porcelain</span> go away!
+        </p>
+      </section>
+    </section>
+
+    <section>
+      <header><h2>Kata 8</h2></header>
+      <p>
+        Below there are four invisible playing cards. If you mouse over them, they flip over to
+        display their faces. The backs (with the <code>back</code> class) are invisible because
+        the <code>transform</code> property is being overridden by another style rule, causing it to
+        be rotated the same direction as the front. Change the specificity of that selector so that
+        the backs of the cards are visible.
+      </p>
+      <section id="kata8">
+        <div class="card-container">
+          <div class="card spade">
+            <div class="back"></div>
+            <div>♠</div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card heart">
+            <div class="back"></div>
+            <div>♥</div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card diamond">
+            <div class="back"></div>
+            <div>♦</div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card club">
+            <div class="back"></div>
+            <div>♣</div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section>
+      <h2>Kata 9</h2>
+      <section id="kata9">
+        <p>
+          Write a style so that the email field below has a green border when the email address is
+          valid or empty and a red border when it's invalid.
+        </p>
+        <p>
+          <input type="email" placeholder="name@domain.com" />
+        </p>
+      </section>
+    </section>
+
+    <section>
+      <h2>Kata 10</h2>
+      <section id="kata10">
+        <p>
+          Write a style so that the snowboarder flips upside-down when you mouse over them.
+        </p>
+        <div>🏂</div>
+      </section>
+    </section>
+
+    <section>
+      <h2>Kata 11</h2>
+      <section id="kata11">
+        <p>
+          Write a style so that the ghost emoji appears in the center of the screen when you mouse
+          over this sentence.
+          <span>👻</span>
+        </p>
+      </section>
+    </section>
+
+    <section>
+      <h2>Kata 12</h2>
+      <section id="kata12">
+        <p>
+          This American flag has an extra white stripe at the top. Use the lobotomized owl selector
+          to fix the flag.
+        </p>
+        <div class="flag">
+          <div class="field">
+            ★ ★ ★ ★ ★ ★<br />
+            ★ ★ ★ ★ ★<br />
+            ★ ★ ★ ★ ★ ★<br />
+            ★ ★ ★ ★ ★<br />
+            ★ ★ ★ ★ ★ ★<br />
+            ★ ★ ★ ★ ★<br />
+            ★ ★ ★ ★ ★ ★<br />
+            ★ ★ ★ ★ ★<br />
+            ★ ★ ★ ★ ★ ★
+          </div>
+          <div class="stripe"></div>
+          <div class="stripe"></div>
+          <div class="stripe"></div>
+          <div class="stripe"></div>
+          <div class="stripe"></div>
+          <div class="stripe"></div>
+          <div class="stripe"></div>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>
